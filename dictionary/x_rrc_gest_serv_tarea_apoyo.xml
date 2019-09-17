@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Tarea de Apoyo" max_length="40" name="x_rrc_gest_serv_tarea_apoyo" sizeclass="5" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Caso" max_length="40" name="u_slx_caso" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Datos del envio" max_length="2000" name="u_slx_datos_envio" type="string"/>
+        <element label="Envío" max_length="32" name="u_slx_envio" type="string"/>
+    </element>
+</database>

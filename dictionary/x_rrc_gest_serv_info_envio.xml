@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Información de envíos" max_length="40" name="x_rrc_gest_serv_info_envio" type="collection">
+        <element display="true" label="Número envío" max_length="40" name="slx_numero_envio" type="string"/>
+        <element label="Descripción envío" max_length="500" name="u_slx_descripcion_envio" type="string"/>
+    </element>
+</database>

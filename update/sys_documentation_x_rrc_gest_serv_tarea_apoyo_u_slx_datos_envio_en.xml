@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_slx_datos_envio" label="Datos del envio" language="en" table="x_rrc_gest_serv_tarea_apoyo">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_slx_datos_envio</element>
+            <help/>
+            <hint/>
+            <label>Datos del envio</label>
+            <language>en</language>
+            <name>x_rrc_gest_serv_tarea_apoyo</name>
+            <plural>Datos del envios</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>slx.dv</sys_created_by>
+            <sys_created_on>2019-08-14 20:50:09</sys_created_on>
+            <sys_id>4061cf81db1f7700d41824684b961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Datos del envio</sys_name>
+            <sys_package display_value="Gestión de Servicios" source="x_rrc_gest_serv">85de562c1b83bf00a38b844fdd4bcb69</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestión de Servicios">85de562c1b83bf00a38b844fdd4bcb69</sys_scope>
+            <sys_update_name>sys_documentation_x_rrc_gest_serv_tarea_apoyo_u_slx_datos_envio_en</sys_update_name>
+            <sys_updated_by>slx.dv</sys_updated_by>
+            <sys_updated_on>2019-08-14 20:50:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

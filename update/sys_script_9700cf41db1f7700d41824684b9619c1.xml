@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rrc_gest_serv_tarea_apoyo</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>SLX copia datos envío</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var caso = new GlideRecord('sn_customerservice_case');
+	caso.addQuery('number', current.u_slx_caso);
+	caso.query();
+	if(caso.next()){
+		var envio = caso.u_slx_envio.u_number;
+		current.u_slx_envio = envio;
+		var datos = "Origen: " + caso.u_slx_envio.u_slx_origen + "\n" + "Destino: " + caso.u_slx_envio.u_slx_destino + "\n" + "Producto: " + caso.u_slx_envio.u_slx_producto + "\n" + "Mercancía: " + caso.u_slx_envio.u_slx_mercancia;
+		current.u_slx_datos_envio = datos;
+		
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>slx.dv</sys_created_by>
+        <sys_created_on>2019-08-14 20:54:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9700cf41db1f7700d41824684b9619c1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>SLX copia datos envío</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestión de Servicios" source="x_rrc_gest_serv">85de562c1b83bf00a38b844fdd4bcb69</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestión de Servicios">85de562c1b83bf00a38b844fdd4bcb69</sys_scope>
+        <sys_update_name>sys_script_9700cf41db1f7700d41824684b9619c1</sys_update_name>
+        <sys_updated_by>slx.dv</sys_updated_by>
+        <sys_updated_on>2019-08-14 21:06:44</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9700cf41db1f7700d41824684b9619c1"/>
+</record_update>
